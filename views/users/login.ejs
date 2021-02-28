@@ -1,0 +1,39 @@
+<% layout('layouts/boilerplate') %>
+    <style>
+        .fix {
+            height: 250px;
+        }
+    </style>
+    <div class="container d-flex justify-content-center align-items-center mt-5 mb-4">
+        <div class="row">
+            <dic class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+                <div class="card shadow">
+                    <img src="https://images.unsplash.com/photo-1576176539998-0237d1ac6a85?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+                        alt="" class="card-img-top fix">
+                    <div class="card-body">
+                        <h5>Login</h5>
+                        <form action="/login" method="POST" class="needs-validation mb-3" novalidate>
+                            <div class="mb-3">
+                                <label for="username" class="form-label"> Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="enter a username"
+                                    name="username" required autofocus>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label"> Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="enter a password"
+                                    name="password" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <button class="btn btn-success btn-block">LOG IN</button>
+                        </form>
+                    </div>
+                </div>
+            </dic>
+        </div>
+    </div>
